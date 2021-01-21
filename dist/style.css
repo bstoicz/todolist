@@ -10,8 +10,10 @@ body {
     height: 40px;
     align-items: center;
     box-shadow: 0px 3px 20px 0px black;
-
+    z-index: 98;
+    position:relative;
 }
+
 
 #home-icon {
     display: flex;
@@ -42,12 +44,13 @@ body {
 }
 
 .leftbar {
-    width: 150px;
+    min-width: 150px;
     background-color: #087E8B;
     height: 100vh;
     color: white;
     box-shadow: 0px 3px 20px 0px black;
     text-align: center;
+    z-index: 99;
 }
 
 .all {
@@ -60,10 +63,43 @@ body {
 }
 
 .overflow {
-    height: 100px;
-    overflow: auto;
+    max-height: 100px;
+    overflow-y: auto;
 }
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
 
 #project-list {
     list-style-type: none;
 }
+
+.main-container {
+    display:flex;
+}
+
+.divider {
+    min-width: 20px;
+    height: 100vh;
+    background-color: blue;
+}
+.right-display {
+    background-color: blue;
+    width: 100%;
+    z-index: 1;
+}
+
+#container {
+    width: 700px;
+    background-color: red;
+    margin: 20px auto;
+}
+

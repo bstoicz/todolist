@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <div class="topbar">
         <div id="home-icon"></div>
         <div id="title">SUM TASKS</div>
@@ -16,6 +17,7 @@
             <button id="add-task-top-btn"></button>
         </div>
     </div>
+    <div class="main-container">
     <div class="leftbar">
         <div class="all">ALL PROJECTS</div>
         <div class="projects">PROJECTS</div>
@@ -26,6 +28,25 @@
                 <li>Bab3</li>
             </ul>
         </div>
+    </div>
+    <div class="divider"></div>    
+
+    <div class="right-display">
+        <div id="container">
+            <div id="top-row-title">Home</div>
+            <div id="due-date-title" class="descending">Due Date
+                <img src="images/arrow.svg" id="date-toggle" alt="">
+            </div>
+            
+            <div id="task-container">
+        
+                <li class="task" id="0"><img src="icons/checkbox-empty.svg" class="empty-check-box"><div class="task-description">Demo Test</div><div class="task-due-date" style="color: red;">9/20/2020</div><img src="icons/edit.svg" class="edit-icon"><img src="icons/delete.svg" class="delete-icon"></li>
+
+                <li class="user-task-checked" id="1"><img src="icons/checkbox.svg" class="checked-box"><div class="task-description">Laundry</div><div class="task-due-date" style="color: red;">9/19/2020</div><img src="icons/edit.svg" class="edit-icon"><img src="icons/delete.svg" class="delete-icon"></li>
+
+            </div>
+        </div>
+    </div>
     </div>
     <script src="main.js"></script>
 </body>
