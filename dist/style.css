@@ -101,5 +101,12 @@ body {
     width: 700px;
     background-color: red;
     margin: 20px auto;
+    display: grid;
+    grid-template-rows: 50px auto;
+    grid-template-columns: 1fr;
+}
+
+#date-toggle {
+    width: 20px;
 }
 
