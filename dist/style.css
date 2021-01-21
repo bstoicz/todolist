@@ -1,23 +1,69 @@
 body {
     margin: 0;
+    font-family: Yusei Magic;
+    background-color: #BFD7EA;
 }
 
 .topbar {
     display: flex;
-    background-color: #BA5F3C;
+    background-color: #0B3954;
     height: 40px;
+    align-items: center;
+    box-shadow: 0px 3px 20px 0px black;
+
 }
 
 #home-icon {
     display: flex;
     background-image: url("icons/home-icon.svg");
-    width: 10%;
+    width: 40px;
     height: 40px;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-#home-icon:hover {
+#home-icon:hover, #add-task-top-btn:hover {
     opacity: 0.8;
 }
 
+#title {
+    margin: auto;
+    color: white;
+}
+
+#add-task-top-btn {
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+    background-image: url("icons/plus-icon.svg");
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.leftbar {
+    width: 150px;
+    background-color: #087E8B;
+    height: 100vh;
+    color: white;
+    box-shadow: 0px 3px 20px 0px black;
+    text-align: center;
+}
+
+.all {
+    padding: 10px 0 10px 0;
+}
+
+.all:hover {
+    background-color: #066a75;
+    transform: scale(1.05);
+}
+
+.overflow {
+    height: 100px;
+    overflow: auto;
+}
+
+#project-list {
+    list-style-type: none;
+}
