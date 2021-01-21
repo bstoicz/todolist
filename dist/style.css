@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.topbar {
+    display: flex;
+    background-color: #BA5F3C;
+    height: 40px;
+}
+
+#home-icon {
+    display: flex;
+    background-image: url("icons/home-icon.svg");
+    width: 10%;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#home-icon:hover {
+    opacity: 0.8;
+}
+
