@@ -89,24 +89,70 @@ body {
 .divider {
     min-width: 20px;
     height: 100vh;
-    background-color: blue;
+    background-color: #BFD7EA;
 }
 .right-display {
-    background-color: blue;
+    background-color: #BFD7EA;
     width: 100%;
     z-index: 1;
 }
 
 #container {
     width: 700px;
-    background-color: red;
+
     margin: 20px auto;
     display: grid;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 40px auto;
     grid-template-columns: 1fr;
+    /* align-items:center; */
 }
 
-#date-toggle {
+#header-title, #due-date{
+    display: block;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: left;
+    line-height: 100%;
+    text-size-adjust: 100%;
+}
+
+#due-date {
+    text-align: right;
+}
+
+#date-arrow-toggle {
     width: 20px;
 }
 
+#task-container {
+    /* grid-row: 2/3; */
+    /* display: grid; */
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.task {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* grid-template-rows: 1fr;
+    grid-template-columns: 1fr; */
+    border-top: #ff5a6070 1px solid;
+    /* position: relative; */
+}
+
+
+.list-right {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  
+}
+
+.task-description, .task-checked {
+    border: 1px solid blue;
+
+}
